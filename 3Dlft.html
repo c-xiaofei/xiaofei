@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C_晓斐，3D立方体</title>
+</head>
+<style>
+    body{
+        margin: 100px auto;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+
+
+
+    }
+    .box{
+
+        margin: 50px auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        transform: rotateX(20deg) rotateY(20deg);
+        animation: boom 2000ms infinite ;
+
+
+
+
+
+}
+    .box div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .s {
+        height: 100px;
+        width: 100px;
+        background-color:rgba(117,15,161,0.7);
+        position:relative;
+
+        transform: rotateX(90deg) translateZ(50px);
+
+
+
+    }
+    .x {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(25, 231, 31, 0.7);
+        transform: rotateX(-90deg) translateZ(50px);
+
+    }
+    .z {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(157, 152, 161, 0.7);
+        transform: rotateY(-90deg) translateZ(50px);
+
+    }
+    .y {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(18, 161, 159, 0.7);
+        transform: rotateY(90deg) translateZ(50px);
+
+
+    }
+    .q {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(157, 231, 185, 0.7);
+        transform: translateZ(50px);
+
+
+    }
+    .h {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(161, 135, 83, 0.7);
+        transform: translateZ(-50px);
+
+
+
+    }
+
+
+    .a {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(36, 161, 49, 0.7);
+        position:relative;
+
+        transform: rotateX(90deg) translateZ(50px);
+
+
+
+    }
+    .aa {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(231, 46, 41, 0.7);
+        transform: rotateX(-90deg) translateZ(50px);
+
+    }
+    .aaa {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(45, 31, 161, 0.7);
+        transform: rotateY(-90deg) translateZ(50px);
+
+    }
+    .aaaa {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(18, 161, 68, 0.7);
+        transform: rotateY(90deg) translateZ(50px);
+
+
+    }
+    .aaaaa {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(231, 30, 222, 0.7);
+        transform: translateZ(50px);
+
+
+    }
+    .aaaaaa {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(117, 23, 161, 0.7);
+        transform: translateZ(-50px);
+
+
+
+    }
+
+
+    .box:hover div:nth-of-type(1){
+        transform: rotateX(90deg) translateZ(130px);
+    }
+    .box:hover div:nth-of-type(2){
+        transform: rotateX(-90deg) translateZ(130px);
+    }
+    .box:hover div:nth-of-type(3){
+        transform: rotateY(-90deg) translateZ(130px);
+    }
+    .box:hover div:nth-of-type(4){
+        transform: rotateY(90deg) translateZ(130px);
+    }
+    .box:hover div:nth-of-type(5){
+        transform:  translateZ(130px);
+    }
+    .box:hover div:nth-of-type(6){
+        transform:  translateZ(-130px);
+    }
+    @keyframes boom {
+        0%{
+            transform: rotateX(0deg)rotateY(0deg);
+        }
+        100%{
+            transform: rotateX(360deg)rotateY(360deg);
+        }
+
+    }
+</style>
+<body>
+<div class="box">
+    <div class="s">上</div>
+    <div class="x">下</div>
+    <div class="q">前</div>
+    <div class="h">后</div>
+    <div class="z">左</div>
+    <div class="y">右</div>
+
+    <div class="a">上</div>
+    <div class="aa">下</div>
+    <div class="aaa">前</div>
+    <div class="aaaa">后</div>
+    <div class="aaaaa">左</div>
+    <div class="aaaaaa">右</div>
+</div>
+</body>
+</html>
