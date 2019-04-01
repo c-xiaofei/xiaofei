@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C_晓斐，爱心</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #5a40fa;
+    }
+    .box{
+        width: 170px;
+        margin: 150px auto;
+        position: absolute;
+        top: 100px;
+        left: 30%;
+        animation: boom 300ms infinite ;
+
+
+    }
+    .left,.right{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213,9,60);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        box-shadow: 0px 0px 40px #d5093c;
+    }
+    .left{
+        left: 0;
+    }
+    .right{
+        right: 0;
+    }
+    .bottom{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213,9,60);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        box-shadow: 0px 0px 40px #d5093c;
+    }
+    @keyframes boom {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(3.5);
+        }
+
+    }
+
+</style>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
+</body>
+</html>
