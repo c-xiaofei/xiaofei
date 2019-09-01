@@ -234,7 +234,7 @@
     var lis =null;
     searchBtn.addEventListener('click',function () {
         $.ajax({
-            url:'https://api.imjad.cn/cloudmusic/',
+            url:'http://tingapi.ting.baidu.com/v1/restserver/ting',
             data:{
                 type:'search',
                 s:searchTxt.value
@@ -294,7 +294,7 @@
     $('.list-box ul').on('click','li',function () {
         index = $(this).index();
         $.ajax({
-            url: 'https://api.imjad.cn/cloudmusic/',
+            url: 'http://tingapi.ting.baidu.com/v1/restserver/ting',
             data:{
                 type:'song',
                 id:data[index].id
